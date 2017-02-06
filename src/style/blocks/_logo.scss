@@ -1,0 +1,8 @@
+.logo {
+    @include title-section(48, 20);
+    color: #ffffff;
+
+    @media($w-tablet) {
+        flex-grow: 4;
+    }
+}

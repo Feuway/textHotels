@@ -1,0 +1,68 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 40px 0;
+
+    @media($w-tablet) {
+        width: 355px;
+        margin: 83px 0;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 74px;
+        height: 74px;
+        background-image: linear-gradient( 0deg, rgb(87,215,129) 0%, rgb(37,173,255) 100%);
+        border-radius: 50%;
+        
+        &-img {
+            position: relative;
+            z-index: 10;
+            background: transparent url('../../img/sprite-social.png') no-repeat;
+
+            &--be {
+                width: 35px;
+                height: 23px;
+                background-position: -52px -4px;
+            }
+
+            &--drb {
+                width: 46px;
+                height: 46px;
+                background-position: -95px -4px;
+            }
+
+            &--vk {
+                width: 40px;
+                height: 22px;
+                background-position: -4px -4px;
+            }
+
+            &--fb {
+                width: 19px;
+                height: 38px;
+                background-position: -149px -4px;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 68px;
+            height: 68px;
+            background: #222222;
+            border-radius: 50%;
+            transition: .2s;
+        }
+
+        &:hover:after {
+            background: none;
+        }
+    }
+}

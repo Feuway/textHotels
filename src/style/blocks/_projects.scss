@@ -1,0 +1,223 @@
+.projects {
+    position: relative;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+
+
+        @media($w-tablet) {
+            height: 660px;
+
+        }
+
+        @media($w-desktop) {
+            height: 860px;
+        }
+        
+        &--site {
+            background: #bdcbd7;
+        }
+
+        &--phone {
+            background: #fbd300;
+        }
+        
+        &--monitor {
+            background: #ffffff;
+        }
+
+        &-img {
+            position: absolute;
+            z-index: 2;
+            
+            &--site {
+                top: 85px;
+                left: 0;
+                width: 67%;
+                height: 975px;
+                background: url('../../img/site-gazprom.png') no-repeat;
+                background-size: 100%;
+            }
+
+            &--phone {
+                top: 455px;
+                left: 0;
+                width: 100%;
+                height: 1446px;
+                background: url('../../img/phone.png') no-repeat;
+                background-size: 100%;
+
+                @media($w-tablet) {
+                    top: 755px;
+
+                }
+
+                @media($w-desktop) {
+                    top: 885px;
+
+                }
+            }
+
+            &--monitor {
+                top: 830px;
+                left: 0;
+                width: 38%;
+                height: 1122px;
+                background: url('../../img/monitor.png') no-repeat;
+                background-size: 100%;
+
+                @media($w-tablet) {
+                    top: 1360px;
+
+                }
+
+                @media($w-desktop) {
+                    top: 1850px;
+
+                }
+            }
+        }
+
+        &-desk {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            width: $w-mobile;
+
+            @media($w-tablet) {
+                width: auto;
+            }
+
+
+            &--site {
+                margin: 0 50px;
+
+                @media($w-tablet) {
+                    align-self: flex-end;
+
+                }
+
+                @media($w-desktop) {
+                    margin-right: 150px;
+                }
+            }
+
+            &--phone {
+
+                @media($w-tablet) {
+                    align-self: flex-start;
+                    margin-left: 15%;
+
+                }
+
+                @media($w-desktop) {
+                    margin-left: 15%;
+
+                }
+            }
+
+            &--monitor {
+
+                @media($w-tablet) {
+                    align-self: flex-end;
+                    width: 400px;
+                }
+
+                @media($w-desktop) {
+                    margin-right: 6%;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    &__title {
+        @include title-section(48, 110);
+    }
+
+    &__list {
+        @include no-list;
+        margin-bottom: 30px;
+
+        @media($w-tablet) {
+            margin-bottom: 50px;
+        }
+
+        @media($w-desktop) {
+            margin-bottom: 70px;
+        }
+
+        &-item {
+            position: relative;
+            margin-left: 10px;
+            @include text-roboto-light(24, 34);
+
+            @media($w-tablet) {
+                margin-left: 18px;
+            }
+
+            @media($w-desktop) {
+                margin-left: 28px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: -8px;
+                width: 6px;
+                height: 1px;
+                background: #000000;
+
+                @media($w-tablet) {
+                    top: 12px;
+                    left: -17px;
+                    width: 10px;
+                }
+
+                @media($w-desktop) {
+                    top: 17px;
+                    left: -28px;
+                    width: 17px;
+                }
+            }
+        }
+    }
+
+    &__watch {
+        align-self: center;
+        border-color: #000000;
+        color: #000000;
+
+        @media($w-tablet) {
+            align-self: flex-start;
+        }
+        
+        &:hover {
+            color: #ffffff;
+        }
+
+        .btn__arrow {
+            fill: #000000;
+        }
+
+
+    }
+
+    &__more {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 210px;
+        background: #303030;
+    }
+}

@@ -1,0 +1,58 @@
+.reason {
+    display: flex;
+    flex-direction: column;
+    width: $w-mobile;
+    height: 120px;
+
+    @media($w-tablet) {
+        width: 365px;
+        height: 150px;
+    }
+
+    @media($w-desktop) {
+        width: 452px;
+        height: 220px;
+    }
+
+    &__title {
+        position: relative;
+        margin-left: 15px;
+        @include text-roboto-regular(19, 32);
+
+        @media($w-tablet) {
+            margin-left: 35px;
+        }
+
+        @media($w-desktop) {
+            margin-left: 50px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -30px;
+            width: 25px;
+            height: 2px;
+            background: #e74c3c;
+
+            @media($w-tablet) {
+                top: 10px;
+                left: -50px;
+                width: 35px;
+                height: 3px;
+            }
+
+            @media($w-desktop) {
+                top: 14px;
+                left: -70px;
+                width: 45px;
+                height: 4px;
+            }
+        }
+    }
+
+    &__text {
+        @include text-roboto-light(17, 32);
+    }
+}

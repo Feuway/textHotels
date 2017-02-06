@@ -1,0 +1,43 @@
+.review {
+
+    &__player {
+        width: 980px * .3;
+        height: 550px * .3;
+
+        @media($w-tablet) {
+            width: 980px * .7;
+            height: 550px * .7;
+        }
+
+        @media($w-desktop) {
+            width: 980px;
+            height: 550px;
+        }
+    }
+
+    &__author {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media($w-tablet) {
+
+        }
+
+        @media($w-desktop) {
+            max-width: 390px;
+            margin-left: 100px;
+        }
+
+        &-name {
+            @include text-roboto-regular(19, 32);
+        }
+
+        &-position {
+            @include text-roboto-light(17, 32);
+        }
+    }
+
+
+
+}

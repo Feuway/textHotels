@@ -1,0 +1,41 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 20px 0;
+    background: transparent;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    @include text-roboto-regular(22, 20);
+    color: #ffffff;
+    text-align: center;
+    transition: .2s;
+
+    @media($w-tablet) {
+        width: 290px;
+        padding: 24px 0;
+        
+    }
+    
+    &:hover {
+        background: #000000;
+        border-color: #000000;
+
+        .btn__arrow {
+            fill: #ffffff;
+        }
+    }
+
+    &:active {
+        opacity: .7;
+    }
+
+    p {
+        margin-right: 9px;
+    }
+
+    &__arrow:hover {
+        fill: #000000;
+    }
+}

@@ -1,0 +1,140 @@
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: #ffffff;
+
+    @media($w-tablet) {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    @media($w-desktop) {
+        margin-top: 150px;
+        margin-bottom: 210px;
+    }
+
+    &__title {
+        @include title-section(48, 110);
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    &__logo {
+
+        &-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 260px;
+            height: 200px;
+
+            @media($w-tablet) {
+                width: 350px;
+            }
+
+            @media($w-desktop) {
+                width: 400px;
+                height: 250px;
+            }
+        }
+    }
+
+    &__quotes {
+        position: relative; 
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 90px;
+        padding: 50px 0;
+
+
+        @media($w-tablet) {
+            width: 700px;
+            height: 220px;
+            margin-top: 100px;
+            margin-bottom: 180px;
+        }
+
+        @media($w-desktop) {
+            width: 900px;
+            height: 320px;
+        }
+
+        &-text {
+            @include text-roboto-light(34, 55);
+            text-align: center;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 48.5%;
+            width: 45px;
+            height: 4px;
+            background: #e74c3c;
+        }
+
+        &:before {
+            @extend .clients__quotes:after;
+            top: 0px;
+        }
+    }
+
+    &__reviews {
+        position: relative;
+        width: 100%;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            @media($w-desktop) {
+                flex-direction: row;
+            }
+        }
+
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 25px * .4;
+            height: 115px * .4;
+            background: url('../../img/next-btn.png') no-repeat;
+            background-size: 100%;
+            cursor: pointer;
+            transition: .2s;
+
+            @media($w-tablet) {
+                width: 25px * .6;
+                height: 115px * .6;
+            }
+
+            @media($w-desktop) {
+                width: 25px;
+                height: 115px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}

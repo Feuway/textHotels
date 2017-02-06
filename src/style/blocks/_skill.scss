@@ -1,0 +1,40 @@
+.skill {
+    display: inline-block;
+    width: $w-mobile;
+    margin-bottom: 60px;
+
+    text-align: left;
+    vertical-align: top;
+    word-spacing: normal;
+
+    @media($w-tablet) {
+        width: 359px;
+    }
+
+    @media($w-desktop) {
+        width: 459px;
+    }
+
+    &__img {
+        display: flex;
+        align-items: flex-end;
+        width: 65px;
+        height: 65px;
+    }
+
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        @include text-roboto-regular(19, 32);
+
+        @media($w-tablet) {
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__text {
+        @include text-roboto-light(14, 28);
+    }
+}

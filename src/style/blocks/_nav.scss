@@ -1,0 +1,56 @@
+.main-nav {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background: rgba(34, 34, 34, .6);
+
+
+    @media($w-tablet) {
+        position: static;
+        flex-grow: 2;
+        width: 30%;
+        margin-right: 150px;
+        background: transparent;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @include no-list;
+
+        @media($w-tablet) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        &-item {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            @include text-roboto-light(22, 20);
+            color: #ffffff;
+            text-decoration: none;
+            white-space: nowrap;
+            border: 2px solid transparent;
+            text-align: center;
+            tansition: .3s linear;
+
+
+            @media($w-tablet) {
+                width: auto;
+                padding: 15px 10px;
+
+            }
+
+            @media($w-desktop) {
+                padding: 15px 18px;
+            }
+
+            &:hover {
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+}

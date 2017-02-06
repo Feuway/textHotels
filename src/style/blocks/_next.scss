@@ -1,0 +1,22 @@
+.next {
+    @include text-roboto-light(18, 20);
+    color: #d4d4d4;
+
+    &--header {
+        font-size: 20px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+    
+    &:after {
+        content: '';
+        position: relative;
+        left: 49%;
+        display: block;
+        width: 1px;
+        height: 41px;
+        background: #d4d4d4;
+    }
+}

@@ -1,0 +1,39 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media($w-desktop) {
+        width: 100%;
+        height: 583px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 60px;
+        @include title-section(48, 110);
+        color: #ffffff;
+        text-align: center;
+
+        @media($w-tablet) {
+            margin-top: 110px;
+        }
+    }
+
+    &__email {
+        @include title-section(30, 110);
+        color: #ffffff;
+    }
+
+    &__phone {
+        margin-bottom: 70px;
+        @include title-section(48, 110);
+        color: #ffffff;
+
+        @media($w-tablet) {
+            margin-bottom: 120px;
+
+        }
+    }
+}

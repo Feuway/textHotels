@@ -1,0 +1,20 @@
+.phone {
+    position: absolute;
+    top: 294px;
+    width: 100%;
+    padding: 16px 0;
+    background: rgba(34, 34, 34, .6);
+    @include text-roboto-light(22, 20);
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+
+    @media($w-tablet) {
+        flex-grow: 1;
+        width: auto;
+        position: static;
+        margin: 0;
+        background: transparent;
+    }
+}

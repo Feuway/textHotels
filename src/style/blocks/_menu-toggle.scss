@@ -1,0 +1,32 @@
+.menu-toggle {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    transition: .2s;
+
+    @media($w-tablet) {
+        display: none;
+    }
+
+    &:hover {
+        transform: translateX(-3px);
+    }
+
+    &:active {
+        transform: translateX(3px);
+    }
+}
+
+.menu-toggle:before {
+    content: "\2261";
+    font: 2.5em "arial";
+}
+
+.menu-toggle:after {
+    content: "\2573";
+    display: none;
+    font: 1.5em "arial";
+}

@@ -1,0 +1,36 @@
+.skills {
+
+    &__title {
+        margin-top: 45px;
+        margin-bottom: 30px;
+        @include title-section(48, 56);
+
+        @media($w-tablet) {
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        @media($w-desktop) {
+            margin-top: 95px;
+            margin-bottom: 80px;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+        word-spacing: 35px;
+
+
+        @media($w-tablet) {
+            margin-bottom: 65px;
+            word-spacing: 50px;
+        }
+
+        @media($w-desktop) {
+            margin-bottom: 85px;
+            word-spacing: 55px;
+        }
+    }
+}

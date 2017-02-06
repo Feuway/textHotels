@@ -1,0 +1,39 @@
+.select-language {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 252px;
+    width: 100%;
+    background: rgba(34, 34, 34, .6);
+
+    @media($w-tablet) {
+        position: static;
+        width: auto;
+        margin: 0;
+        background: transparent;
+    }
+
+    &__lang {
+        width: 40px;
+        padding: 12px 0;
+        @include text-roboto-light(22, 20);
+        color: #777777;
+        text-align: center;
+        cursor: pointer;
+
+        @media($w-tablet) {
+            width: 40px;
+            padding: 12px 0;
+        }
+
+        @media($w-tablet) {
+            width: 50px;
+            padding: 15px 0;
+        }
+
+        &--active {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+    @media($w-tablet) {
+        margin: 0 75px;
+    }
+
+    @media($w-desktop) {
+        margin: 0 150px;
+    }
+
+    &--header {
+        margin: 0;
+
+        @media($w-tablet) {
+            margin: 0 75px;
+        }
+
+        @media($w-desktop) {
+            margin: 0 150px;
+        }
+    }
+}

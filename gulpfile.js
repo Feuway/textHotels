@@ -30,7 +30,7 @@ var project = {
         html: 'src/*.html',
         script: 'src/script/main.js',
         style: 'src/style/main.scss',
-        img: 'src/img/**/*.{png, jpg}',
+        img: 'src/img/**/*.{png,jpg}',
         fonts: 'src/fonts/**/*.*',
         bin: 'src/bin/**/*.*'
     },

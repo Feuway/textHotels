@@ -2,13 +2,311 @@
 <html lang=ru>
 <head>
     <meta charset="UTF-8">
-    <title>Test_task</title>
+    <title>Test_hotels.ru</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-dd
+
+    <header class="main-header">
+        <div class="wrap  wrap--header">
+            <div class="main-header__nav">
+                <h2 class="logo">Logotype</h2>
+                <button class="menu-toggle"></button>
+                <nav class="main-nav  invisible">
+                    <ul class="main-nav__list">
+                        <li>
+                            <a href="#" class="main-nav__list-item">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-nav__list-item">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-nav__list-item">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-nav__list-item">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="phone  invisible">
+                    8 (800) 600 90 90
+                </p>
+                <div class="select-language  invisible">
+                    <span class="select-language__lang  select-language__lang--active">Ru</span>
+                    <span class="select-language__lang">En</span>
+                </div>
+            </div>
+            <div class="main-header__middle">
+                <h1 class="main-header__middle-title">Новый уровень вашего бизнеса</h1>
+                <p class="main-header__middle-text">Стратегия, UI / UX дизайн, разработка, seo для торговых марок премиум-класса.</p>
+            </div>
+            <div class="next  next--header">
+                <p>Подробнее</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="skills">
+            <div class="wrap">
+                <h2 class="skills__title  section-title">Что мы делаем</h2>
+                <div class="skills__container">
+                        <div class="skill">
+                            <div class="skill__img">
+                                <img src="img/analitics.png" width="57" height="52" alt="skill-img">
+                            </div>
+                            <h3 class="skill__title">Аналитика</h3>
+                            <p class="skill__text">Консалтинг и аудит сайтов. Увеличим конверсию сайта компании, эффективность последующих рекламных кампаний за счет выявления и устранения технических и маркетинговых ошибок.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__img">
+                                <img src="img/chess.png" width="43" height="57" alt="skill-img">
+                            </div>
+                            <h3 class="skill__title">Стратегия</h3>
+                            <p class="skill__text">Мы объединяем стратегическое мышление с дизайном для создания эффективной коммуникации с вашим брендом в онлайн-среде. Разработаем коммуникационные, медиа- и digital-стратегии. Составим план развития на год вперед.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__img">
+                                <img src="img/megaphone.png" width="57" height="57" alt="skill-img">
+                            </div>
+                            <h3 class="skill__title">SMM</h3>
+                            <p class="skill__text">Разрабатываем стратегию присутствия в new медиа, активации в социальных сетях, создаем контент-планы, обеспечиваем коммьюнити-менеджмент, работаем с блогерами, внедряем Social CRM, интегрируем банковский сервис в Facebook.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__img">
+                                <img src="img/techno.png" width="61" height="50" alt="skill-img">
+                            </div>
+                            <h3 class="skill__title">Технологии и продакшн</h3>
+                            <p class="skill__text">Проектируем и разрабатываем корпоративные сайты на платформе 1С-Битрикс, мобильные приложения, веб-интерфейсы, в том числе интернет-банкинг и личные кабинеты. Обеспечиваем поддержку 24/7 и дальнейшее развитие вашего интернет-пространства.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__img">
+                                <img src="img/pencil.png" width="50" height="50" alt="skill-img">
+                            </div>
+                            <h3 class="skill__title">Дизайн</h3>
+                            <p class="skill__text">Разработка дизайна любого уровня и сложности: адаптивный дизайн, дизайн мобильных приложений, создание UI Framework c возможностью дальнейшей миграции на любые платформы.</p>
+                        </div>
+                </div>
+                <div class="next">
+                    <p>Проекты</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="projects__item  projects__item--site">
+                <div class="projects__item-img  projects__item-img--site"></div>
+                <div class="projects__item-desk  projects__item-desk--site">
+                    <h2 class="projects__title">ПАО «Газпром»</h2>
+                    <ul class="projects__list">
+                        <li class="projects__list-item">Веб-сайт</li>
+                    </ul>
+                    <a href="#" class="projects__watch  btn">
+                        <p>Смотреть проект</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+                            <defs>
+                                <style>
+                                    .btn__arrow {
+                                        fill-rule: evenodd;
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="btn__arrow" d="M512.013,3383.3h22.21c-1.071-1.3-1.6-2.15-1.658-3.31,2.434,2,5.6,3.03,9.422,4.01a24.977,24.977,0,0,0-9.422,4,6.337,6.337,0,0,1,1.691-3.39H512.013v-1.31Z" transform="translate(-512 -3380)"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="projects__item  projects__item--phone">
+                <div class="projects__item-desk  projects__item-desk--phone">
+                    <h2 class="projects__title">Тинькофф Банк</h2>
+                    <ul class="projects__list">
+                        <li class="projects__list-item">Брендинг</li>
+                        <li class="projects__list-item">UI/UX дизайн</li>
+                        <li class="projects__list-item">Разработка мобильного приложения для iOS</li>
+                        <li class="projects__list-item">Веб-сайт</li>
+                    </ul>
+                    <a href="#" class="projects__watch  btn">
+                        <p>Смотреть проект</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+                            <defs>
+                                <style>
+                                    .btn__arrow {
+                                        fill-rule: evenodd;
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="btn__arrow" d="M512.013,3383.3h22.21c-1.071-1.3-1.6-2.15-1.658-3.31,2.434,2,5.6,3.03,9.422,4.01a24.977,24.977,0,0,0-9.422,4,6.337,6.337,0,0,1,1.691-3.39H512.013v-1.31Z" transform="translate(-512 -3380)"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="projects__item-img  projects__item-img--phone"></div>
+            </div>
+            <div class="projects__item  projects__item--monitor">
+                <div class="projects__item-img  projects__item-img--monitor"></div>
+                <div class="projects__item-desk  projects__item-desk--monitor">
+                    <h2 class="projects__title">Adidas</h2>
+                    <ul class="projects__list">
+                        <li class="projects__list-item">Веб-сайт</li>
+                        <li class="projects__list-item">Разработка мобильного приложения для iOS, Android и Windows</li>
+                    </ul>
+                    <a href="#" class="projects__watch  btn">
+                        <p>Смотреть проект</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+                            <defs>
+                                <style>
+                                    .btn__arrow {
+                                        fill-rule: evenodd;
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="btn__arrow" d="M512.013,3383.3h22.21c-1.071-1.3-1.6-2.15-1.658-3.31,2.434,2,5.6,3.03,9.422,4.01a24.977,24.977,0,0,0-9.422,4,6.337,6.337,0,0,1,1.691-3.39H512.013v-1.31Z" transform="translate(-512 -3380)"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="projects__more">
+                <a href="#" class="projects__more-watch  btn">
+                    <p>Все наши проекты</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+                        <defs>
+                            <style>
+                                .btn__arrow {
+                                    fill-rule: evenodd;
+                                    fill: #ffffff;
+                                }
+                            </style>
+                        </defs>
+                        <path class="btn__arrow" d="M512.013,3383.3h22.21c-1.071-1.3-1.6-2.15-1.658-3.31,2.434,2,5.6,3.03,9.422,4.01a24.977,24.977,0,0,0-9.422,4,6.337,6.337,0,0,1,1.691-3.39H512.013v-1.31Z" transform="translate(-512 -3380)"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="reasons">
+            <div class="wrap">
+                <h2 class="reasons__title">причин работать с нами</h2>
+                <div class="reasons__container">
+                    <div class="reason">
+                        <h3 class="reason__title">Профессионализм</h3>
+                        <p class="reason__text">Мы нацелены развить ваш бизнес за счет технических решений, а не просто выполнить техническое задание.</p>
+                    </div>
+                    <div class="reason">
+                        <h3 class="reason__title">Актуальность решений</h3>
+                        <p class="reason__text">Мы заботимся о том, чтобы ваш продукт оставался актуальным долгие годы, разрабатывая адаптивные и масштабируемые решения.</p>
+                    </div>
+                    <div class="reason">
+                        <h3 class="reason__title">Победы</h3>
+                        <p class="reason__text">На нашем счету более 30 призовых мест в российских и международных ведущих отраслевых конкурсах веб-разработки.</p>
+                    </div>
+                    <div class="reason">
+                        <h3 class="reason__title">Прозрачность</h3>
+                        <p class="reason__text">Сроки и бюджет разработки открыты и предсказуемы — мы заботимся об этом еще на этапе подписания договора.</p>
+                    </div>
+                    <div class="reason">
+                        <h3 class="reason__title">Опыт работы с highload проектами</h3>
+                        <p class="reason__text">Мы разрабатываем веб-сервисы, способные выдерживать высокие нагрузки (до 10000 запросов/сек) и обеспечивать поддержку растущего количества пользователей.</p>
+                    </div>
+                    <div class="reason">
+                        <h3 class="reason__title">Использование fullstack технологий</h3>
+                        <p class="reason__text">Мы открыты к новым технологиям, понимаем каждую из них и имеем представление о том, как развить веб-приложение от стадии проектирования до готового продукта.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="wrap">
+                <h2 class="clients__title">Наши клиенты</h2>
+                <div class="clients__container">
+                    <div class="clients__logo-wrap">
+                        <img src="img/Tinkoff.png" width="241" height="182" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Gazprom.png" width="252" height="122" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/MU.png" width="180" height="182" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Hermitage.png" width="241" height="95" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Moleskine.png" width="248" height="24" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Starbucks.png" width="166" height="167" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Audi.png" width="220" height="77" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/adidas.png" width="200" height="133" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Ginza%20Project.png" width="173" height="177" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Oscar.png" width="298" height="91" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Alfa%20bank.png" width="215" height="151" alt="clients-logo" class="clients__logo">
+                    </div>
+                    <div class="clients__logo-wrap">
+                        <img src="img/Showtime-Logo.png" width="250" height="89" alt="clients-logo" class="clients__logo">
+                    </div>
+                </div>
+                <div class="clients__quotes">
+                    <p class="clients__quotes-text">
+                        Нам часто говорят: «Это лучше, чем я мог представить». Мы отвечаем, что это просто хорошая работа.
+                    </p>
+                </div>
+                <div class="clients__reviews">
+                    <div class="clients__reviews-item  review">
+                        <div class="review__player  player">
+                            <div class="player__video"></div>
+                            <div class="player__play">
+                                <span class="player__play-btn"></span>
+                                <p class="player__play-text">Отзыв клиента</p>
+                            </div>
+                        </div>
+                        <div class="review__author">
+                            <h3 class="review__author-name">Говард Шульц</h3>
+                            <p class="review__author-position">председатель совета директоров, главный управляющий и президент компании Starbucks</p>
+                        </div>
+                    </div>
+                    <span class="clients__reviews-arrow"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer__contacts">
+            <div class="wrap">
+                <div class="contacts">
+                    <h3 class="contacts__title">Вы уже хотите пообщаться с нами?</h3>
+                    <p class="contacts__email">hello@iwant.com</p>
+                    <p class="contacts__phone">8 (800) 600 90 90</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer__social">
+            <div class="social">
+                <div class="social__item">
+                    <a href="#" class="social__item-img  social__item-img--be"></a>
+                </div>
+                <div class="social__item">
+                    <a href="#" class="social__item-img  social__item-img--drb"></a>
+                </div>
+                <div class="social__item">
+                    <a href="#" class="social__item-img  social__item-img--vk"></a>
+                </div>
+                <div class="social__item">
+                    <a href="#" class="social__item-img  social__item-img--fb"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script/main.js"></script>
 </body>
